@@ -1,0 +1,81 @@
+.svg-classroom-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.svg-classroom {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Curtains waving */
+.curtain-wave {
+  animation: waveCurtain 3s ease-in-out infinite alternate;
+  transform-origin: top center;
+}@keyframes waveCurtain {
+  0% {
+    transform: skewX(0deg);
+  }
+  50% {
+    transform: skewX(4deg);
+  }
+  100% {
+    transform: skewX(-4deg);
+  }
+}
+
+
+/* Lamp glow animation */
+.lamp-blink rect {
+  animation: glowLamp 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glowLamp {
+  0% {
+    fill: #fffacd;
+    filter: drop-shadow(0 0 0px #fffacd);
+  }
+  50% {
+    fill: #ffeb8a;
+    filter: drop-shadow(0 0 6px #ffeb8a);
+  }
+  100% {
+    fill: #fffacd;
+    filter: drop-shadow(0 0 0px #fffacd);
+  }
+}
+
+
+/* Children waving */
+.wave1 .hand {
+  animation: handWave 2s infinite alternate;
+  transform-origin: center left;
+}
+
+.wave2 .hand {
+  animation: handWave 2s infinite alternate-reverse;
+  transform-origin: center right;
+}
+
+@keyframes handWave {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(20deg); }
+}
+
+/* Text content */
+.solution-title {
+  color: #ff6f61;
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.text-content {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  max-width: 600px;
+  margin: 0 auto;
+}

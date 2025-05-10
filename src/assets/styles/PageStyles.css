@@ -1,0 +1,263 @@
+.poster-card {
+  position: relative;
+  background: #fff;
+  border-radius: 24px;
+  padding: 80px 40px 40px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+.sakha-logo {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.school-tagline {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.styled-S {
+  font-size: 34px;
+  font-weight: bold;
+  color: #1a237e;
+}
+
+.intro-image-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 70px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.intro-text {
+  flex: 1;
+  min-width: 250px;
+  padding-left: 20px;
+}
+
+.intro-text h3 {
+  font-size: 18px;
+  margin: 0;
+  color: #333;
+}
+
+.intro-text h2 {
+  font-size: 26px;
+  margin-top: 8px;
+  color: #1a237e;
+}
+
+.students-photo {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.students-photo img.rounded-frame {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+}
+
+.details-text {
+  text-align: center;
+  margin: 30px 0;
+}
+.details-text-inline {
+  margin-top: 20px;
+}
+.details-text-inline h4 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: #4e342e;
+}
+.details-text-inline p {
+  font-size: 15px;
+  color: #555;
+  margin: 0;
+}
+
+.call-to-action {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+.website-link p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.poster-card {
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  padding: 60px 20px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: auto;
+}
+
+.page.solution {
+  padding: 0;
+  background: transparent;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Title */
+.solution-title {
+  color: #1a237e;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* SVG container */
+.svg-classroom-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.svg-classroom {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Curtain animation */
+.curtain-wave {
+  animation: waveCurtain 3s ease-in-out infinite alternate;
+  transform-origin: top center;
+}
+
+@keyframes waveCurtain {
+  0% { transform: skewX(0deg); }
+  50% { transform: skewX(4deg); }
+  100% { transform: skewX(-4deg); }
+}
+
+/* Lamp glow */
+.lamp-blink rect {
+  animation: glowLamp 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glowLamp {
+  0% { fill: #fffacd; filter: drop-shadow(0 0 0px #fffacd); }
+  50% { fill: #ffeb8a; filter: drop-shadow(0 0 6px #ffeb8a); }
+  100% { fill: #fffacd; filter: drop-shadow(0 0 0px #fffacd); }
+}
+
+/* Hand wave */
+.wave1 .hand {
+  animation: handWave 2s infinite alternate;
+  transform-origin: center left;
+}
+
+.wave2 .hand {
+  animation: handWave 2s infinite alternate-reverse;
+  transform-origin: center right;
+}
+
+@keyframes handWave {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(20deg); }
+}
+
+/* Desk subtle motion */
+rect[x="90"][y="190"] {
+  animation: deskVibe 5s ease-in-out infinite;
+}
+
+@keyframes deskVibe {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(1px); }
+}
+
+/* Books float */
+rect[x="130"][y="175"],
+rect[x="160"][y="175"] {
+  animation: floatBook 3s ease-in-out infinite alternate;
+}
+
+@keyframes floatBook {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-2px); }
+}
+
+/* Child bobbing */
+.child {
+  animation: bobChild 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes bobChild {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-3px); }
+}
+
+/* Sun rays rotate */
+.sun-rays {
+  transform-origin: 310px 40px;
+  animation: rotateRays 4s linear infinite;
+}
+
+@keyframes rotateRays {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Text content animation */
+.text-content {
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 30px;
+}
+
+.text-content h3, .text-content p {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+.text-content h3 {
+  animation-delay: 0.2s;
+  font-size: 20px;
+  color: #1a237e;
+  margin-bottom: 6px;
+}
+
+.text-content p:nth-of-type(1) { animation-delay: 0.4s; }
+.text-content p:nth-of-type(2) { animation-delay: 0.6s; }
+.text-content p:nth-of-type(3) { animation-delay: 0.8s; }
+.text-content p:nth-of-type(4) { animation-delay: 1s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

@@ -1,0 +1,96 @@
+.problem-container {
+  background-color: #FFF5E1;
+  padding: 4rem 1rem;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.illustration-area {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.traffic-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.traffic-scene {
+  width: 100%;
+  height: auto;
+}
+
+/* Vehicle motion - LTR */
+.direction-ltr {
+  animation: moveLtr 12s linear infinite;
+}
+
+@keyframes moveLtr {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(1000px);
+  }
+}
+
+/* Vehicle motion - RTL with flip */
+.direction-rtl {
+  animation: moveRtl 12s linear infinite;
+  transform: scaleX(-1);
+}
+
+@keyframes moveRtl {
+  0% {
+    transform: translateX(1000px) scaleX(-1);
+  }
+  100% {
+    transform: translateX(-300px) scaleX(-1);
+  }
+}
+
+/* Delay classes for staggering */
+.delay-0 { animation-delay: 0s; }
+.delay-1 { animation-delay: 1s; }
+.delay-2 { animation-delay: 2s; }
+.delay-3 { animation-delay: 3s; }
+.delay-4 { animation-delay: 4s; }
+.delay-5 { animation-delay: 5s; }
+
+/* Student slump */
+.student-group {
+  animation: studentSlump 3s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes studentSlump {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(6px); }
+}
+
+/* Bag wiggle */
+.bag {
+  animation: bagWiggle 2s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes bagWiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25%      { transform: rotate(4deg); }
+  75%      { transform: rotate(-4deg); }
+}
+
+/* Text styles */
+.text-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.text-content p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
